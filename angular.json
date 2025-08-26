@@ -13,7 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/app-fachada",
+            "outputPath": {
+              "base": "dist/app-fachada",
+              "browser": ""
+            },
             "index": "projects/app-fachada/src/index.html",
             "browser": "projects/app-fachada/src/main.ts",
             "polyfills": [
@@ -27,6 +30,9 @@
               }
             ],
             "styles": [
+              "./node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
+              "./node_modules/@totvs/po-theme/css/po-theme-default.min.css",
+              "./node_modules/@po-ui/style/css/po-theme-core.min.css",
               "projects/app-fachada/src/styles.css"
             ],
             "scripts": []
@@ -85,6 +91,9 @@
               }
             ],
             "styles": [
+              "./node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
+              "./node_modules/@totvs/po-theme/css/po-theme-default.min.css",
+              "./node_modules/@po-ui/style/css/po-theme-core.min.css",
               "projects/app-fachada/src/styles.css"
             ],
             "scripts": []
@@ -102,7 +111,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/app-sample",
+            "outputPath": {
+              "base": "dist/app-sample",
+              "browser": ""
+            },
             "index": "projects/app-sample/src/index.html",
             "browser": "projects/app-sample/src/main.ts",
             "polyfills": [
@@ -116,6 +128,9 @@
               }
             ],
             "styles": [
+              "./node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
+              "./node_modules/@totvs/po-theme/css/po-theme-default.min.css",
+              "./node_modules/@po-ui/style/css/po-theme-core.min.css",
               "projects/app-sample/src/styles.css"
             ],
             "scripts": []
@@ -174,6 +189,9 @@
               }
             ],
             "styles": [
+              "./node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
+              "./node_modules/@totvs/po-theme/css/po-theme-default.min.css",
+              "./node_modules/@po-ui/style/css/po-theme-core.min.css",
               "projects/app-sample/src/styles.css"
             ],
             "scripts": []
